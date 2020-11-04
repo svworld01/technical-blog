@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>DEVELOPERS LIFE</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+    <style>
+        .fakeimg {
+            height: 200px;
+            background: #aaa;
+        }
+    </style>
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+        <a class="navbar-brand bg-success" href="javascript:void(0)">SAURABH KR VERMA</a>
+        <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navb">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navb">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="/">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="/tech">Tech Update</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="/programming">Programming</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="/life">Life Learning</a>
+                </li>
+                <!---   
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">
+                      CS/IT
+                    </a>
+                    <div class="dropdown-menu">
+                        <a id="submenu" class="dropdown-item" href="#">Data Structure</a>
+                        <a id="submenu" class="dropdown-item" href="#">Algorithms</a>
+                        <a id="submenu" class="dropdown-item" href="#">Technologies</a>
+                    </div>
+                </li>
+                -->
+                <li class="nav-item">
+                    <a class="nav-link" href="javascript:void(0)">About</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="javascript:void(0)">Contact Me</a>
+                </li>
+            </ul>
+            <form class="form-inline my-2 my-lg-0">
+                <input class="form-control mr-sm-2" type="text" placeholder="Search">
+                <button class="btn btn-success my-2 my-sm-0" type="button">Search</button>
+            </form>
+        </div>
+    </nav>
+    <div class="container-fluid" style="margin-top:70px">
+
+
+        <div class="row">
+            <div class="col-sm-1"></div>
+            <div class="col-lg-8 col-md-8 col-sm-12">
+                <h2>{{post.title}}</h2>
+                <h6>{{ post.published_at }}</h6>
+                <hr>
+                <img class="img-fluid" src="{{post.cover.url}}" style="height: 200px; width: 100%;">
+                <i>{{post.excert}}</i>
+                <p>
+                    {{post.content|safe}}
+                </p>
+
+                <br>
+            </div>
+
+            <div class="col-lg-2 col-md-2 col-sm-12">
+
+                <h2>Category</h2>
+                <hr>
+                <ul class="nav nav-item flex-column">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Algorithms</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Data Structure</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Technology</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Life Learnings</a>
+                    </li>
+
+                </ul>
+                <hr class="d-sm-block">
+                <h2>Auther</h2>
+                <hr>
+                <div class="fakeimg">Fake Image</div>
+                <h5>Saurabh Kr Verma</h5>
+                <p>Some text about me in culpa qui officia deserunt mollit anim..</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="jumbotron text-center" style="margin-bottom:0">
+        <p>Footer</p>
+    </div>
+
+</body>
+
+</html>
